@@ -20,6 +20,4 @@ var minSubArrayLen = function(target, nums) {
     if(minLength === Number.MAX_SAFE_INTEGER) return 0 
     return minLength
 
-
-
 };
