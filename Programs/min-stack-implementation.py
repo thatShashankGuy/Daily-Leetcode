@@ -18,16 +18,16 @@ class MinStack:
         
 
     def top(self) -> int:
-        if len(self.stack )!= 0:
-            return self.stack[-1]
-        return 0  
+        if len(self.stack )== 0:
+            raise IndexError["stack is empty"]
+        return self.stack[-1] 
         
 
     def getMin(self) -> int:
-        if len(self.minstack) != 0 :
-            return self.minstack[-1]
+        if len(self.minstack) == 0 :
+            raise IndexError["stack is empty"]
         
-        return 10 *26
+        return  self.minstack[-1]
 
 
 # Your MinStack object will be instantiated and called as such:
